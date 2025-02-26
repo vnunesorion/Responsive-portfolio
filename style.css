@@ -1,243 +1,145 @@
+*{
+    margin: 0;
+    color: black;
+    font-family: poppins;
+    font-size: 16px;
+    box-sizing: border-box;
+}
 body{
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right:15%;
 }
-.container {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+/*cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 0  
 }
-#header {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-    /* identical to box height */
-
-    text-decoration-line: underline;
-
-    color: #070F18;
-    margin-top:40px;
-    margin-bottom: 40px;
+header h1 {
+    font-size: 30px;
+    text-decoration: underline;
 }
-#menu {
-    text-align: right;
-}
-#menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#menu li {
-    display: inline-block;
-    margin-left: 20px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
-    text-align: center;
-
-    color: #070F18;
-    margin-top: 49px;
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
     
 }
-a {
+#menu a{
     text-decoration: none;
-    color: #070F18;
 }
-#buttonCta {
-    background: #1F7CFF;
-    border-radius: 50px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 10px 25px 10px  25px;
-}
-#headerCta h1 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    color: #000000;
-}
-#headerCta p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    /* or 200% */
+#menu a:hover {
     color: #575455;
+}
+
+/*apresentação*/
+
+.apresentacao {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+
+#headerCta h1 {
+    font-size: 45px;
+}
+
+#headerCta p {
+    color: #575455;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#buttonCta{
+    background-color: #1F7CFF;
+    color: white;
+    padding: 10px 25px;
+    border-radius:50px;
+    text-wrap: nowrap;
+    text-decoration:none;
+}
+
+.clientes {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Services*/
+
+.conheca-servicos{
+    text-align: center;
+}
+
+.red {
+    color: #F75C4E;
+    font-size: 16px;
+}
+.conheca-servicos .black {
+    font-size: 36px;
     
 }
-#headerImg img{
-    width: 100%;
-}
-#headerImg {
-    margin-left: 42px;
-}
-.headerLogo {
-    text-align: center;
-}
-#clients {
-    margin-top:50px;
-    margin-bottom: 50px;
-}
-.headerClientText {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #070F18;
-}
-h2.red {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
-    text-align: center;
-
-    color: #F75C4E;
-}
-h1.black {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    /* identical to box height */
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-
-    color: #000000;
-}
-#services p.desc {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    /* or 200% */
-    margin-top: 5px;
-    text-align: center;
-
+.desc {
     color: #575455;
+    line-height: 30px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
 }
 .textCenter {
     text-align: center;
-    margin-top: 60px;
-}
-.textCenter h1 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
     line-height: 30px;
-    /* identical to box height */
+}
 
+/*contact*/
 
-    color: #070F18;
+.contato-email{
+    display: flex;
+    gap: 5.5%;
+    align-items: center;
+}
+.contato-email h1 {
+    font-size: 36px;
+    line-height: 60px;
+}
 
-}
-p.desc {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    /* or 200% */
-    text-align: center;
-
-    color: #575455;
-}
-.textCenter h3{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
-    margin-bottom: 0;
-    
-    color: #070F18;
-}
-#duasmulheres img {
-    width: 100%;
-    margin-top: 101px;
-}
-#duasmulheres h2 {
-    margin-top: 140px;
-    text-align: left;
-    margin-left: 76px;
-    margin-bottom: 5px;
-}
-#duasmulheres h1{
-    text-align: left;
-    margin-left: 76px;
-}
-#duasmulheres h1{
-    margin-top: 0px;
-}
-#duasmulheres p{
-    text-align: left;
-    margin-left: 76px;
-}
-.email{
+.contato-email .email{
     height: 48px;
     width: 406px;
     background-color: #F5F6FB;
     color: #575455;
     border-radius: 50px;
-    margin-left: 76px;
     margin-bottom: 0px;
     padding-left: 32px;
     font-size: 16px;
     border: 0px;
 }
-.enviar {
+.contato-email .enviar {
     background: #1F7CFF;
-    width:130px;
+    width: 130px;
     height: 48px;
     border: 0px;
     color: white;
     border-radius: 50px;
     margin-top: 20px;
     text-align: center;
-    margin-left: 76px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    
-} 
-#portfolio-title .red{
-    text-align: left;
-    margin-left: 0px;
-    margin-bottom: 0px;
 }
-#portfolio-title .black {
-    text-align: left;
-    margin-left: 0px;
-    margin-top: 0px;
+.portfolio-title .black{
+    font-size: 36px;
 }
-.imgport {
-    padding: 15px;
+.portfolio-img{
+    display: flex;
+    justify-content: space-between;
 }
-#creditos {
+.creditos {
     text-align: center;
-    color: #575455;
-    font-family: 'Poppins';
 }
